@@ -104,4 +104,5 @@ Then:
 3. Overlay stays on top of all windows
 
 > [!NOTE]
-> *Known issue:* The audio chunk capturing, and translation take time, so the subtitles appear with adelay, making the video and subtitles out of sync.
+> *Known issue:* The audio chunk capturing, and translation take time, so the subtitles appear with a delay of ~5 sec when using GPU (more if using CPU), making the video and subtitles out of sync.
+> The small model is faster but less accurate, while the medium model is more accurate but slower. You can experiment with different models in `transcriber.py` to find the best balance for your use case.
